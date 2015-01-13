@@ -1,81 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Page Loader</title>
+<meta charset="UTF-8">
+<title>Page Loader</title>
 
-	<style>
-		/* Preloader */
-		.preloader {
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: #fff;
-			z-index: 99;
-		}
+<style>
+	/* Preloader */
+	.preloader {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #fff;
+		z-index: 99;
+	}
 
-		/* Spinner */
-		@-webkit-keyframes spin {
-			100% {
-				-webkit-transform: rotate(360deg);
-				transform: rotate(360deg);
-			}
+	/* Spinner */
+	@-webkit-keyframes spin {
+		100% {
+			-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
 		}
-		@-moz-keyframes spin {
-			100% {
-				-moz-transform: rotate(360deg);
-				transform: rotate(360deg);
-			}
+	}
+	@-moz-keyframes spin {
+		100% {
+			-moz-transform: rotate(360deg);
+			transform: rotate(360deg);
 		}
+	}
 
-		@-o-keyframes spin {
-			100% {
-				-o-transform: rotate(360deg);
-				transform: rotate(360deg);
-			}
+	@-o-keyframes spin {
+		100% {
+			-o-transform: rotate(360deg);
+			transform: rotate(360deg);
 		}
-		@keyframes spin {
-			100% {
-				transform: rotate(360deg);
-			}
+	}
+	@keyframes spin {
+		100% {
+			transform: rotate(360deg);
 		}
-		.spinner {
-			position: absolute;
-			left: 50%;
-			top: 35%;
-			width: 25px;
-			height: 25px;
-			border: 6px solid #000;
-			border-left-color: #333;
-			border-bottom-color: #555;
-			border-right-color: transparent;
-			border-radius: 100%;
-			animation: spin 600ms infinite linear;
-			-webkit-animation: spin 600ms infinite linear;
-			-moz-animation: spin 600ms infinite linear;
-			-o-animation: spin 600ms infinite linear;
-		}
+	}
+	.spinner {
+		position: absolute;
+		left: 50%;
+		top: 35%;
+		width: 25px;
+		height: 25px;
+		border: 6px solid #000;
+		border-left-color: #333;
+		border-bottom-color: #555;
+		border-right-color: transparent;
+		border-radius: 100%;
+		animation: spin 600ms infinite linear;
+		-webkit-animation: spin 600ms infinite linear;
+		-moz-animation: spin 600ms infinite linear;
+		-o-animation: spin 600ms infinite linear;
+	}
 
-		/* Spinner [using picture] */
-		/*.spinner {
-			width:200px;
-			height:200px;
-			position:absolute;
-			left:50%;
-			top:50%;
-			background-image:url("loader.gif");
-			background-repeat:no-repeat;
-			background-position:center;
-			margin:-100px 0 0 -100px;
-		}*/
-	</style>
+	/* Spinner [using picture] */
+	/*.spinner {
+		width:200px;
+		height:200px;
+		position:absolute;
+		left:50%;
+		top:50%;
+		background-image:url("loader.gif");
+		background-repeat:no-repeat;
+		background-position:center;
+		margin:-100px 0 0 -100px;
+	}*/
+</style>
 
 </head>
 <body>
 
-<!-- <script>
+<script>
 	;(function() {
 		var preloader = document.createElement('div');
 		preloader.className = 'preloader';
@@ -99,9 +99,9 @@
 			}, 10);
 		}, 500);
 	}());
-</script> -->
+</script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 	;(function() {
 		var preloader = $('<div>').addClass('preloader');
@@ -115,7 +115,7 @@
 			preloader.remove();
 		}, 1000);
 	}());
-</script>
+</script> -->
 
 
 <h1 style="text-align: center; font-size: 60px">Hello World!</h1>
